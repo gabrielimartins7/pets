@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { Link } from 'react-router-dom';
 
 import signInBackgroundImg from '../../Assets/login.jpg';
 
@@ -23,10 +24,6 @@ export const Title = styled.h1`
      z-index: -1;
    }
 `;
-
-
-
-
 
 export const Container = styled.div`
   height: 100vh;
@@ -81,4 +78,20 @@ export const Background = styled.div`
   flex: 1;
   background: url(${signInBackgroundImg}) no-repeat center;
   background-size: cover;
+`;
+
+export const LinkLogin = styled(Link)`
+  color: #ffa500;
+  font-family: var(--type-second);
+  font-size: 20px;
+  text-decoration: none;
+
+  &::after {
+    content: '';
+    display: block;
+    background: #ddd;
+    height: 0.5rem;
+    width: 3rem;
+    border-radius: 0.2rem;
+  }
 `;

@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
-import { Title, Container, Content, Background, AnimationContainer } from './styles';
+import { Title, Container, Content, Background, AnimationContainer, LinkLogin } from './styles';
 
 import Button from '../../Components/Button';
 import Input from '../../Components/Input'
@@ -25,7 +24,7 @@ export default function Login() {
           <Input type="password" label="Senha" value={password} onChange={({target}) => setPassword(target.value)} />
           <Button title={"Entrar"}/>
         </form>
-        <Link to="/cadastro">Cadastre-se</Link>
+        <LinkLogin to="/cadastro">Para se cadastrar clique aqui</LinkLogin>
     </AnimationContainer>
     </Content>
     <Background/>
