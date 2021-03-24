@@ -1,10 +1,10 @@
 import React from 'react';
-import { ComponentFooter, Img } from './style';
+import { ComponentFooter, Copy } from './style';
 
 function Footer() {
   return (
     <ComponentFooter>
-      Alguns direitos reservados
+      <Copy>Pets - alguns direitos reservados</Copy>
     </ComponentFooter>
   )
 }
