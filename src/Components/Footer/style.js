@@ -6,6 +6,7 @@ export const ComponentFooter = styled.div`
   height: 5rem;
   text-align: center;
   color: var(--darkYellow);
+  
 `;
 
 export const Copy = styled.p`

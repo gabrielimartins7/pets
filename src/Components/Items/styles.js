@@ -2,11 +2,12 @@ import styled from 'styled-components';
 
 
 
-export const Img = styled.div`
- background-color: #000;
+export const Img = styled.img`
   height: 180px;
   width: 350px;
   border-radius: 4px;
+  background-size: auto;
+  cursor: pointer;
 `
 
 export const Card = styled.div`
@@ -43,6 +44,20 @@ export const ContainerLike = styled.div`
   width: 50px;
   background-color:#fff;
   border-radius: 4px;
+  display: flex;
+  justify-content:space-around;
+  align-items:center;
+  cursor: pointer;
+`
+
+export const TagCategoria = styled.div`
+  position:absolute;
+  top: 0px;
+  right: 0px;
+  height: 30px;
+  width: 80px;
+  background-color:var(--yellow);
+  border-radius: 2px;
   display: flex;
   justify-content:space-around;
   align-items:center;
